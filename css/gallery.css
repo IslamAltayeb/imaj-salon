@@ -1,0 +1,190 @@
+/* color-var */
+
+:root {
+    --main-color: rgb(188, 147, 33);
+    --secondary-color: #f7f7f7;
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  
+  .container {
+    padding-left: 15p;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* midum */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;  
+    background-color: black;
+    transition:ease-in 3s;
+  }
+
+  /* customaizing scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--secondary-color); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color); 
+  }
+
+
+  /* start gallery section */  
+
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .con {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;    
+  }
+
+  @media (max-width: 767px){
+    .con  {
+      margin-top: 50%;  
+      width: 100%;    
+    }
+  }
+
+  .con .mySlides img {
+    
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 767px){
+    .con .mySlides img {
+      height: 375px;      
+    }
+  }
+  .row{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .row .column img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  @media (max-width: 767px){
+    .row .column img {
+      height: 75px; 
+      z-index: 2;     
+    }
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 1;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: var(--main-color);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  /* end gallery section */

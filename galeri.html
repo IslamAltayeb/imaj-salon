@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- turkish language -->
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1254">
+        <META HTTP-EQUIV="Content-language" CONTENT="tr">
+
+    <title>galeri - salon imaj erkek berberi</title>
+    <link rel="shortcut icon" href="img/title logo.png" />
+ <!-- render all elements normaly -->
+ <link rel="stylesheet" href="css/normaliz.css" />
+ <!-- style css file -->
+ <link rel="stylesheet" href="css/style.css" />
+ <!-- hizmetler css file -->
+ <link rel="stylesheet" href="css/gallery.css">
+ <!-- font aswsome  -->
+ <script src="https://kit.fontawesome.com/1284c12520.js" crossorigin="anonymous"></script>
+
+  <!-- aos style css file -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body onload="myloading()">
+    
+     <!-- start loading section -->
+   <div id="loading"></div>
+   <!-- end loading section -->
+
+    <!-- start header -->
+ <div class="header">    
+
+    <div class="content">  
+        
+      <!-- start mobile menu  -->
+    <div class="mobile" id="mobile">
+     <div class="container">
+      <a href="index.html"><img src="img/logo2.png" alt=""></a> 
+       <div class="links" id="menu">
+         <span class="icon" id="icon">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           <strong>Menü</strong>
+         </span>
+ 
+         <ul id="list" class="list">
+           <li><a href="index.html">ANA SAYFA</a></li>
+           <li><a href="#HAKKIMIZDA">HAKKIMIZDA</a></li>
+           <li><a href="hizmetler.html">HİZMETLER</a></li>
+           <li><a href="galeri.html">GALERİ</a></li>
+           <li><a href="#İLETİŞİM">İLETİŞİM</a></li>
+
+           <div class="social-mobile">
+             <a href=""><i class="fa-brands fa-instagram"></i></a>
+             <a href=""><i class="fab fa-youtube"></i></a> 
+              </div> 
+         </ul>
+       
+       </div>
+     </div>
+     </div>
+    <!-- end mobile menu  -->
+     
+        <div class="logo">
+         <a href="index.html"><img src="img/logo2.png" alt=""></a> 
+        </div>
+ 
+        <div class="icon">
+            <a href="index.html">ANA SAYFA</a>
+            <a href="#HAKKIMIZDA">HAKKIMIZDA</a>
+            <a href="hizmetler.html">HİZMETLER</a>
+            <a href="galeri.html">GALERİ</a>
+            <a href="index.html#İLETİŞİM">İLETİŞİM</a>
+        </div>
+ 
+        <div class="social">
+       <a href="#"><i class="fa-brands fa-instagram"></i></a>
+       <a href="#"><i class="fab fa-youtube"></i></a> 
+        </div>  
+        
+    </div>  
+    
+ </div>
+ <!-- end header -->
+
+ <!-- start gallery section -->
+ 
+ <div class="con">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img/fatma.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="img/g1.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="img/g2.jpg" >
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="img/g3.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img/g4.jpg" >
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img/g5.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-circle-chevron-left"></i></a>
+  <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-circle-chevron-right"></i></a>
+
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/fatma.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/g1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/g2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/g3.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/g4.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/g5.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+ <!-- end gallery section -->
+ 
+<!-- start footer section -->
+<footer><p>&copy; Powered by islam altayeb 2022</p></footer>
+<!-- end footer section -->
+
+  <!-- go to top button -->
+  <button onclick="topFunction()" id="myBtn" title="yukarı git">&and;</button>
+  <!--end go to top button -->
+
+
+    <!-- normal js file -->
+    <script src="js/script.js"></script>
+
+    <script src="js/gallery.js"></script>
+
+    <!-- aos js file from github -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+ <!-- start loading section -->
+ <script>   
+
+  var preloader = document.getElementById("loading");
+  
+  function myloading() {
+    preloader.style.display ="none";
+  }
+      </script>
+
+
+</body>
+</html>
